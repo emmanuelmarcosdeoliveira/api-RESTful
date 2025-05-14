@@ -11,9 +11,11 @@
   "license": "ISC",
   "packageManager": "pnpm@10.8.0",
   "dependencies": {
+    "express": "4.19.2",
     "typescript": "5.5.4"
   },
   "devDependencies": {
+    "@types/express": "^5.0.1",
     "@types/node": "20.14.12",
     "tsx": "4.16.2"
   }

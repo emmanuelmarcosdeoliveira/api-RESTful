@@ -1,5 +1,11 @@
-function sum(a: number, b: number): number {
-  return a + b;
-}
-const result: number = sum(3, 9);
-console.log(result);
+import express from "express";
+
+const PORT = 3333;
+
+const app = express();
+
+app.get("/", (request, response) => {
+  response.send(`Hello world Express!`);
+});
+
+app.listen(PORT, () => console.log(`server is running  port ${PORT}`));
