@@ -1,9 +1,12 @@
 import express from "express";
-
+import { myMiddleware } from "./middlewares/myMiddleware";
 const PORT = 3333;
 
 const app = express();
 app.use(express.json());
+// Abaixo Middleware global
+app.use(myMiddleware);
+
 app.get("/", (request, response) => {
   response.send("Hello World Express");
 });
