@@ -5,7 +5,7 @@ export function myMiddleware(
   response: Response,
   next: NextFunction
 ) {
-  console.log("Passou pelo Middleware!");
+  request.user_id = "123456";
 
   return next();
 }
